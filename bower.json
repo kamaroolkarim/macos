@@ -1,0 +1,23 @@
+{
+  "name": "apceros",
+  "homepage": "https://github.com/kamaroolkarim/apceros",
+  "authors": [
+    "Kamarool Karim <kamaroolkarim@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "animate-sass": "^0.6.6",
+    "bourbon": "^4.2.7",
+    "include-media": "^1.4.9"
+  }
+}
