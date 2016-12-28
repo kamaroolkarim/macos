@@ -21,6 +21,17 @@
             padding: 0 7px;
             margin: 0;
             > li {
+                &.active {
+                    &::after {
+                        content:'•';
+                        font-size: 15px;
+                        color: rgba($white-color, 0.7);
+                        position: absolute;
+                        bottom: -6px;
+                        left: 40%;
+                        right: 60%;
+                    }
+                }
                 list-style-type: none;
                 display: inline-block;
                 position: relative;
@@ -68,6 +79,7 @@
                 &:hover + li img,
                 &.prev img {
                     @include transform(scale(1.4));
+                    margin: 0 1.4em 10px;
                 }
             }
         }
