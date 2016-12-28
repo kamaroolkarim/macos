@@ -48,7 +48,7 @@
                 span {
                     display: none;
                     position: absolute;
-                    bottom: 80px;
+                    bottom: 100px;
                     left: 0;
                     width: 100%;
                     background-color: rgba(0, 0, 0, .75);
@@ -73,13 +73,13 @@
                     -o-transform-origin: 50% 100%;
                 }
                 &:hover img {
-                    @include transform(scale(2.2));
+                    @include transform(scale(2.5));
                     margin: 0 2em 10px;
                 }
                 &:hover + li img,
                 &.prev img {
                     @include transform(scale(1.4));
-                    margin: 0 1.4em 10px;
+                    margin: 0 0.7em 10px;
                 }
             }
         }
