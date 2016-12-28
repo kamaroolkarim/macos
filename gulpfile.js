@@ -71,6 +71,8 @@ function vendorJSTask() {
     return gulp.src([
         config.bower + 'jquery/dist/jquery.min.js',
         config.bower + 'bootstrap-sass/assets/javascripts/bootstrap.min.js',
+        config.bower + 'vue/dist/vue.min.js',
+        config.bower + 'moment/min/moment.min.js'
     ])
         .pipe(include())
         .on('error', notifier)
@@ -88,7 +90,8 @@ function vendorJSTask() {
 
 function scriptJSTask() {
     return gulp.src([
-        './resources/assets/js/app.js'
+        './resources/assets/js/app.js',
+        './resources/assets/js/vm.js',
     ])
         .pipe(include())
         .on('error', notifier)

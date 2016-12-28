@@ -18,6 +18,8 @@
     "bootstrap-sass": "^3.3.7",
     "animate-sass": "^0.6.6",
     "bourbon": "^4.2.7",
-    "include-media": "^1.4.9"
+    "include-media": "^1.4.9",
+    "moment": "^2.17.1",
+    "vue": "1.0.28"
   }
 }

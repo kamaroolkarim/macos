@@ -27,8 +27,9 @@ function addPrevClass(e) {
         }, false);
     }
 }
-if (window.addEventListener) {
+
+/*if (window.addEventListener) {
     document.getElementById('dock').addEventListener('mouseover', addPrevClass, false);
 }
 
-document.getElementById('ua-string').innerHTML = navigator.userAgent;
+document.getElementById('ua-string').innerHTML = navigator.userAgent;*/
