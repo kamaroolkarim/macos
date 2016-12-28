@@ -72,9 +72,9 @@ function vendorJSTask() {
         config.bower + 'jquery/dist/jquery.min.js',
         config.bower + 'bootstrap-sass/assets/javascripts/bootstrap.min.js',
         config.bower + 'vue/dist/vue.min.js',
-        // config.bower + 'requirejs/require.js',
-        // config.bower + 'vue-moment/vue-moment.min.js',
-        config.bower + 'moment/min/moment.min.js'
+        config.bower + 'moment/min/moment.min.js',
+        config.bower + 'interactjs/dist/interact.min.js',
+        config.bower + 'keys.js/src/keys.min.js'
     ])
         .pipe(include())
         .on('error', notifier)
@@ -94,6 +94,7 @@ function scriptJSTask() {
     return gulp.src([
         './resources/assets/js/app.js',
         './resources/assets/js/vm.js',
+        './resources/assets/js/key-binding.js'
     ])
         .pipe(include())
         .on('error', notifier)

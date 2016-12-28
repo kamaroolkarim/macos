@@ -33,3 +33,6 @@ function addPrevClass(e) {
 }
 
 document.getElementById('ua-string').innerHTML = navigator.userAgent;*/
+
+// -------------------------------------------- Interact JS ------------------------------------- //
+

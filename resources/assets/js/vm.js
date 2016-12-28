@@ -1,3 +1,14 @@
+/*
+|--------------------------------------------------------------------------
+| Vue Object
+|--------------------------------------------------------------------------
+|
+| Authors: Kamarool Karim
+| Email: kamarool@coolcode.my
+| Date Created: 28 December 2016
+|
+ */
+
 new Vue({
     el: '#desktop',
     data: {
