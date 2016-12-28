@@ -22,24 +22,192 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="application-title"><a href="#">Finder </a></li>
-                    <li><a href="#">File </a></li>
-                    <li><a href="#">Edit</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="text">New Finder Window</span>
+                                    <span class="icon">⌘N</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span class="text">New Folder</span>
+                                <span class="icon">⇧⌘N</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">New Smart Folder</span>
+                                    <span class="icon">⌥⌘N</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">New Tab</span>
+                                    <span class="icon">⌘T</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Open</span>
+                                    <span class="icon">⌘O</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Open With</span>
+                                    <span class="icon">►</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Print</span>
+                                    <span class="icon">⌘P</span>
+                                </a>
+                            </li>
+                            <li class="disabled"><a href="#">Close Window</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Get Info</span>
+                                    <span class="icon">⌘I</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Rename</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Compress "Screen Shot 2016-12-29 at 4.11.56 AM"</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Duplicate</span>
+                                    <span class="icon">⌘D</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Make Alias</span>
+                                    <span class="icon">⌘L</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Quick Look "Screen Shot 2016-12-29 at 4.11.56 AM"</span>
+                                    <span class="icon">⌘Y</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span class="text">Show Original</span>
+                                    <span class="icon">⌘R</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Add to Dock</span>
+                                    <span class="icon">^⇧⌘T</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Move to Trash</span>
+                                    <span class="icon">⌘⌫</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span class="text">Eject</span>
+                                    <span class="icon">⌘E</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Find</span>
+                                    <span class="icon">⌘F</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Tags...</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="text">Undo Move</span>
+                                    <span class="icon">⌘Z</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span class="text">Redo</span>
+                                    <span class="icon">⇧⌘Z</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span class="text">Cut</span>
+                                    <span class="icon">⌘X</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span class="text">Copy</span>
+                                    <span class="icon">⌘C</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span class="text">Paste</span>
+                                    <span class="icon">⌘V</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Select All</span>
+                                    <span class="icon">⌘A</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                   <span class="text">Show Clipboard</span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Start Dictation...</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">Emoji & Symbols</span>
+                                    <span class="icon">^⌘Space</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">View</a></li>
                     <li><a href="#">Go</a></li>
                     <li><a href="#">Window</a></li>
                     <li><a href="#">Help</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><img src="/img/volume.svg" class="search-icon" alt="Volume"/></a></li>
