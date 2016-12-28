@@ -72,6 +72,8 @@ function vendorJSTask() {
         config.bower + 'jquery/dist/jquery.min.js',
         config.bower + 'bootstrap-sass/assets/javascripts/bootstrap.min.js',
         config.bower + 'vue/dist/vue.min.js',
+        // config.bower + 'requirejs/require.js',
+        // config.bower + 'vue-moment/vue-moment.min.js',
         config.bower + 'moment/min/moment.min.js'
     ])
         .pipe(include())
@@ -141,7 +143,7 @@ function watchTask() {
 }
 
 function buildTask() {
-    runSequence('sass', 'vendors', 'scripts', 'images');
+    runSequence('sass', 'vendors', 'scripts');
 }
 
 function notifier(error) {
