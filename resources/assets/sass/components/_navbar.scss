@@ -8,7 +8,6 @@
 
 .navbar-brand {
     float: left;
-    // padding: $navbar-padding-vertical $navbar-padding-horizontal;
     font-size: $font-size-large;
     line-height: 12px;
     height: 0;
@@ -43,6 +42,7 @@
         padding-top: 0;
         padding-bottom: 0;
         line-height: 7px;
+        cursor: default;
     }
     @media (max-width: $grid-float-breakpoint-max) {
         // Dropdowns get custom display when collapsed
