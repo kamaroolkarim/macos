@@ -1,0 +1,20 @@
+// @include text-emphasis-variant('.text-primary', $primary-color);
+
+@include text-emphasis-variant('.text-success', $success-color);
+
+// @include text-emphasis-variant('.text-info', $info-color);
+
+@include text-emphasis-variant('.text-warning', $warning-color);
+
+@include text-emphasis-variant('.text-danger', $danger-color);
+
+
+// @include bg-variant('.bg-primary', $primary-color);
+
+@include bg-variant('.bg-success', $success-color);
+
+// @include bg-variant('.bg-info', $info-color);
+
+@include bg-variant('.bg-warning', $warning-color);
+
+@include bg-variant('.bg-danger', $danger-color);

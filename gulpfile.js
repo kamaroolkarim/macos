@@ -74,7 +74,7 @@ function vendorJSTask() {
         config.bower + 'vue/dist/vue.min.js',
         config.bower + 'moment/min/moment.min.js',
         config.bower + 'interactjs/dist/interact.min.js',
-        config.bower + 'keys.js/src/keys.min.js'
+        config.bower + 'keys.js/src/keys.js'
     ])
         .pipe(include())
         .on('error', notifier)

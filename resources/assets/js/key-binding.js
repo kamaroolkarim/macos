@@ -16,27 +16,19 @@ window.Key = Keys.Key;
 // Initialize application-wide bindings manager
 window.bindings = new Bindings();
 
-// Add binding to display an alert
-bindings.add('displayAlert', new Combo(Key.A, Key.SHIFT));
+// Add a binding to toggle the page background color
+bindings.add('toggleBackground', new Combo(Key.B, Key.CTRL));
 
-// Register display alert behavior using inferred name/eventType notation
-bindings.registerHandler(displayAlert);
 /**
- *  If you want to use a specific eventType (default is 'keydown'):
-bindings.registerHandler('keyup', displayAlert);
-
- *  Or if you want to use a named function for a binding with a different name:
-bindings.registerHandler('sayHello', displayAlert);
-
- *  Or if you want to use an anonymous function for the handler:
-bindings.registerHandler('displayAlert', function() {
-    alert('Hello!');
-});
-
- *  Or if you want to specify everything at once:
-bindings.registerHandler('displayAlert', 'keyup', displayAlert);
-
+ * Register background color toggle behavior
+ * Toggles always fire on 'keydown'
  */
-function displayAlert() {
-    alert('Hello!');
+bindings.registerToggle('toggleBackground', toggleBlack, toggleWhite);
+function toggleBlack() {
+    $('body').css('background-color', 'black');
+    $('h1').css('color', 'white');
+}
+function toggleWhite() {
+    $('body').css('background-color', 'white');
+    $('h1').css('color', 'black');
 }

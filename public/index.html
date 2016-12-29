@@ -21,14 +21,13 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="&nbsp;"/>
+    <meta name="application-name" content="&nbsp;" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
 </head>
 
@@ -54,8 +53,8 @@
                             </li>
                             <li>
                                 <a href="#">
-                                <span class="text">New Folder</span>
-                                <span class="icon">⇧⌘N</span>
+                                    <span class="text">New Folder</span>
+                                    <span class="icon">⇧⌘N</span>
                                 </a>
                             </li>
                             <li>
@@ -208,7 +207,7 @@
                             <li role="separator" class="divider"></li>
                             <li>
                                 <a href="#">
-                                   <span class="text">Show Clipboard</span>
+                                    <span class="text">Show Clipboard</span>
                                 </a>
                             </li>
                             <li role="separator" class="divider"></li>
@@ -231,55 +230,123 @@
                     <li><a href="#">Help</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><img src="/img/volume.svg" class="search-icon" alt="Volume"/></a></li>
-                    <li><a href="#"><img src="/img/bluetooth.svg" class="search-icon" alt="Bluetooth"/></a></li>
-                    <li><a href="#"><img src="/img/wifi.svg" class="wifi-icon" alt="Wifi"/></a></li>
+                    <li>
+                        <a href="#"><img src="/img/volume.svg" class="search-icon" alt="Volume" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/img/bluetooth.svg" class="search-icon" alt="Bluetooth" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/img/wifi.svg" class="wifi-icon" alt="Wifi" /></a>
+                    </li>
                     <li class="battery"><a href="#"><span>65% <img src="/img/battery.png" class="battery-icon" alt="Battery"/></a></li>
                     <li><a href="#">{{ date }}</a></li>
-                    <li><a href="#"><img src="/img/search.svg" class="search-icon" alt="Spotlight Search"/></a></li>
-                    <li><a href="#"><img src="/img/menubarnotification.png" class="menu-bar-noti-icon" alt="Menu Bar Notification"/></a></li>
+                    <li>
+                        <a href="#"><img src="/img/search.svg" class="search-icon" alt="Spotlight Search" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/img/menubarnotification.png" class="menu-bar-noti-icon" alt="Menu Bar Notification" /></a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </section>
     <section class="content">
-        <!-- <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <div class="panel panel-default draggable">
-                    <div class="panel-body">
-                        Basic panel example
+        <div class="modal fade draggable" id="terminal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="list-inline">
+                                    <li><span class="dot kill"></span></li>
+                                    <li><span class="dot minimize"></span></li>
+                                    <li><span class="dot fullscreen"></span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h4 class="modal-title">el-capitan -- -bash</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </section>
     <section>
         <footer class="footer">
             <div class="dock-container">
                 <div class="dock">
                     <ul>
-                        <li class="active"><span>Finder</span><a href="#"><img src="/img/dock/finder.png" alt="Finder"/></a></li>
-                        <li><span>iTunes</span><a href="#"><img src="/img/dock/itunes.png" alt="iTunes"/></a></li>
-                        <li><span>Notes</span><a href="#"><img src="/img/dock/notes.png" alt="Notes"/></a></li>
-                        <li><span>Calendar</span><a href="#"><img src="/img/dock/calendar.png" alt="Calendar"/></a></li>
-                        <li class="active"><span>Terminal</span><a href="#"><img src="/img/dock/terminal.png" alt="Terminal"/></a></li>
-                        <li><span>Messages</span><a href="#"><img src="/img/dock/messages.png" alt="Messages"/></a></li>
-                        <li><span>Mail</span><a href="#"><img src="/img/dock/mail.png" alt="Mail"/></a></li>
-                        <li><span>Safari</span><a href="#"><img src="/img/dock/safari.png" alt="Safari"/></a></li>
-                        <li><span>Photos</span><a href="#"><img src="/img/dock/photos.png" alt="Photos"/></a></li>
-                        <li><span>Settings</span><a href="#"><img src="/img/dock/settings.png" alt="Settings"/></a></li>
-                        <li><span>Sublime Text</span><a href="#"><img src="/img/dock/sublime.png" alt="Sublime Text"/></a></li>
-                        <li><span>Xcode</span><a href="#"><img src="/img/dock/xcode.png" alt="Xcode"/></a></li>
-                        <li><span>Genymotion</span><a href="#"><img src="/img/dock/genymotion.png" alt="Genymotion"/></a></li>
-                        <li class="active"><span>Sketch</span><a href="#"><img src="/img/dock/sketch.png" alt="Sketch"/></a></li>
-                        <li class="active"><span>Google Chrome</span><a href="#"><img src="/img/dock/googlechrome.png" alt="Google Chrome"/></a></li>
-                        <li class="active"><span>MAMP</span><a href="#"><img src="/img/dock/mamp.png" alt="MAMP"/></a></li>
-                        <li><span>Spotify</span><a href="#"><img src="/img/dock/spotify.png" alt="Spotify"/></a></li>
-                        <li><span>Telegram</span><a href="#"><img src="/img/dock/telegram.png" alt="Telegram"/></a></li>
-                        <li><span>WhatsApp</span><a href="#"><img src="/img/dock/whatsapp.png" alt="WhatsApp"/></a></li>
-                        <li><span>Slack</span><a href="#"><img src="/img/dock/slack.png" alt="Slack"/></a></li>
-                        <li class="separator"><span>Downloads</span><a href="#"><img src="/img/dock/folder.png" alt="Downloads"/></a></li>
-                        <li><span>Trash</span><a href="#"><img src="/img/dock/trash.png" alt="Trash"/></a></li>
+                        <li class="active"><span>Finder</span>
+                            <a href="#"><img src="/img/dock/finder.png" alt="Finder" /></a>
+                        </li>
+                        <li><span>iTunes</span>
+                            <a href="#"><img src="/img/dock/itunes.png" alt="iTunes" /></a>
+                        </li>
+                        <li><span>Notes</span>
+                            <a href="#"><img src="/img/dock/notes.png" alt="Notes" /></a>
+                        </li>
+                        <li><span>Calendar</span>
+                            <a href="#"><img src="/img/dock/calendar.png" alt="Calendar" /></a>
+                        </li>
+                        <li class="active"><span>Terminal</span>
+                            <a data-toggle="modal" data-target="#terminal"><img src="/img/dock/terminal.png" alt="Terminal" /></a>
+                        </li>
+                        <li><span>Messages</span>
+                            <a href="#"><img src="/img/dock/messages.png" alt="Messages" /></a>
+                        </li>
+                        <li><span>Mail</span>
+                            <a href="#"><img src="/img/dock/mail.png" alt="Mail" /></a>
+                        </li>
+                        <li><span>Safari</span>
+                            <a href="#"><img src="/img/dock/safari.png" alt="Safari" /></a>
+                        </li>
+                        <li><span>Photos</span>
+                            <a href="#"><img src="/img/dock/photos.png" alt="Photos" /></a>
+                        </li>
+                        <li><span>Settings</span>
+                            <a href="#"><img src="/img/dock/settings.png" alt="Settings" /></a>
+                        </li>
+                        <li><span>Sublime Text</span>
+                            <a href="#"><img src="/img/dock/sublime.png" alt="Sublime Text" /></a>
+                        </li>
+                        <li><span>Xcode</span>
+                            <a href="#"><img src="/img/dock/xcode.png" alt="Xcode" /></a>
+                        </li>
+                        <li><span>Genymotion</span>
+                            <a href="#"><img src="/img/dock/genymotion.png" alt="Genymotion" /></a>
+                        </li>
+                        <li class="active"><span>Sketch</span>
+                            <a href="#"><img src="/img/dock/sketch.png" alt="Sketch" /></a>
+                        </li>
+                        <li class="active"><span>Google Chrome</span>
+                            <a href="#"><img src="/img/dock/googlechrome.png" alt="Google Chrome" /></a>
+                        </li>
+                        <li class="active"><span>MAMP</span>
+                            <a href="#"><img src="/img/dock/mamp.png" alt="MAMP" /></a>
+                        </li>
+                        <li><span>Spotify</span>
+                            <a href="#"><img src="/img/dock/spotify.png" alt="Spotify" /></a>
+                        </li>
+                        <li><span>Telegram</span>
+                            <a href="#"><img src="/img/dock/telegram.png" alt="Telegram" /></a>
+                        </li>
+                        <li><span>WhatsApp</span>
+                            <a href="#"><img src="/img/dock/whatsapp.png" alt="WhatsApp" /></a>
+                        </li>
+                        <li><span>Slack</span>
+                            <a href="#"><img src="/img/dock/slack.png" alt="Slack" /></a>
+                        </li>
+                        <li class="separator"><span>Downloads</span>
+                            <a href="#"><img src="/img/dock/folder.png" alt="Downloads" /></a>
+                        </li>
+                        <li><span>Trash</span>
+                            <a href="#"><img src="/img/dock/trash.png" alt="Trash" /></a>
+                        </li>
                     </ul>
                     <div class="dock-base"></div>
                 </div>

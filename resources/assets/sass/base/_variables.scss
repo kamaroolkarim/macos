@@ -2,10 +2,12 @@ $white-color: #ffffff;
 $black-color: #000000;
 $graphite-color: #454343;
 $grey-color: #f1f1f1;
-$base-theme-color: #D24D57;
-$tertiary-base-color: #263340;
+
+$success-color: #35CC4B;
+$warning-color: #FDBF41;
+$danger-color: #FC615D;
 
 $highlight-color: #4397FB;
-$letter-spacing: 0.3px;
+$app-header-color: #E4E2E4;
 
-$breakpoints: ( 'phone': 320px, 'tablet': 768px, 'desktop': 1024px, 'large-desktop': 1800px);
+$letter-spacing: 0.3px;
