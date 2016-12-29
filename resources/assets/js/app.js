@@ -81,3 +81,10 @@ function dragMoveListener(event) {
 
 // this is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
+
+// -------------------------------------------- Modal ------------------------------------- //
+
+$('.modal').modal({
+    backdrop: 'static',
+    keyboard: false
+});
