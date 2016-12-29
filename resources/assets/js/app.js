@@ -82,9 +82,19 @@ function dragMoveListener(event) {
 // this is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
 
-// -------------------------------------------- Modal ------------------------------------- //
+// -------------------------------------------- Terminal JS ------------------------------------- //
 
-$('.modal').modal({
-    backdrop: 'static',
-    keyboard: false
-});
+/*var container = document.querySelector('.bash');
+var bsh = new bash(container, {
+    demo: true,
+    prompt: ['~', '$'],
+    function: function(bash, next) {
+        bash.post('npm install --production', 0, true);
+        bash.post('npm start', 500, true);
+        bash.post('&nbsp;', 600);
+        bash.post('&nbsp;', 600);
+        bash.post('# You\'re done!', 1500, false, true, function() {
+            return next();
+        });
+    }
+});*/

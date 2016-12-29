@@ -23,6 +23,7 @@
     "vue": "1.0.28",
     "vue-moment": "brockpetrie/vue-moment#^2.0.1",
     "requirejs": "^2.3.2",
-    "interactjs": "interact#^1.2.8"
+    "interactjs": "interact#^1.2.8",
+    "bash": "^1.1.0"
   }
 }
