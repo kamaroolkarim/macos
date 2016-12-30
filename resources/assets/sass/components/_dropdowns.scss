@@ -20,6 +20,10 @@
         .text {
             padding-right: 50px
         }
+        .icon-right {
+            width: 17px;
+            display: inline-block;
+        }
         .icon {
             text-align: right;
             position: absolute;
@@ -113,3 +117,7 @@
     z-index: ($zindex-dropdown - 10);
 }
 
+.dropdown-menu-right {
+    left: auto; // Reset the default from `.dropdown-menu`
+    right: -1px !important;
+}

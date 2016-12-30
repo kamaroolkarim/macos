@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
 </head>
 
-<body id="desktop">
+<body>
     <section>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -240,8 +240,73 @@
                         <li>
                             <a href="#"><img src="/img/wifi.svg" class="wifi-icon" alt="Wifi" /></a>
                         </li>
-                        <li class="battery"><a href="#"><span>65% <img src="/img/battery.png" class="battery-icon" alt="Battery"/></a></li>
-                        <li><a href="#">{{ date }}</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="battery dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span>65% <img src="/img/battery.png" class="battery-icon" alt="Battery"/>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li class="disabled">
+                                    <a href="#">
+                                        <span class="text">7:13 Remaining</span>
+                                    </a>
+                                </li>
+                                <li class="disabled">
+                                    <a href="#">
+                                        <span class="text">Power Source: Battery</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li class="disabled">
+                                    <a href="#">
+                                        <span class="text">Apps Using Significant Energy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon-right" src="/img/dock/googlechrome.png"/ alt="Google Chrome">
+                                        <span class="text">Google Chrome</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon-right" src="/img/dock/sublime.png"/ alt="Sublime">
+                                        <span class="text">Sublime Text</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon-right" src="/img/dock/genymotion.png"/ alt="Genymotion">
+                                        <span class="text">Genymotion</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="vm-date">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ date }}</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="disabled">
+                                    <a href="#">
+                                        <span class="text">{{ dateDetail }}</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text"> View as Digital</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">View as Analog</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Open Date & Time Preferences...</span>
+                                    </a>
+                                </li>
+                            </ul>
                         <li>
                             <a href="#"><img src="/img/search.svg" class="search-icon" alt="Spotlight Search" /></a>
                         </li>
