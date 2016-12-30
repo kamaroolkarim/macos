@@ -237,8 +237,23 @@
                         <li>
                             <a href="#"><img src="/img/bluetooth.svg" class="search-icon" alt="Bluetooth" /></a>
                         </li>
-                        <li>
-                            <a href="#"><img src="/img/wifi.svg" class="wifi-icon" alt="Wifi" /></a>
+                        <li class="dropdown" id="vm-wifi">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img src="/img/wifi.svg" v-if="wifiEnabled" class="wifi-icon" alt="Wifi" />
+                                <img src="/img/nowifi.svg" v-if="!wifiEnabled" class="wifi-icon" alt="Wifi off" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li class="disabled">
+                                    <a href="#">
+                                        <span class="text" v-if="wifiEnabled">Wifi: Looking for Networks...</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" v-on:click="toggleWifi()">
+                                        <span class="text">Turn Wi-Fi Off</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="battery dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -277,6 +292,17 @@
                                     <a href="#">
                                         <img class="icon-right" src="/img/dock/genymotion.png"/ alt="Genymotion">
                                         <span class="text">Genymotion</span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Show Percentage</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Open Energy Saver Preferences...</span>
                                     </a>
                                 </li>
                             </ul>

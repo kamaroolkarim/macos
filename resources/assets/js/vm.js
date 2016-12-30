@@ -17,3 +17,20 @@ new Vue({
     },
 
 });
+
+new Vue({
+    el: '#vm-wifi',
+    data: {
+        wifiEnabled: true,
+    },
+    methods: {
+        toggleWifi: function() {
+            console.log('lol');
+            if (this.wifiEnabled === true) {
+                this.wifiEnabled = false;
+            } else {
+                this.wifiEnabled = true;
+            }
+        }
+    }
+});
