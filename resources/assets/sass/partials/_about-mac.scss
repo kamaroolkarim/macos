@@ -1,0 +1,69 @@
+.about-mac {
+    .modal-content {
+        width: 600px;
+        border: 1px solid rgba($black-color, 0.08);
+        box-shadow: 0px 26px 91px -24px rgba(0,0,0,0.75);
+    }
+    .modal-header {
+        height: 40px;
+        padding-top: 10px;
+        border-bottom: 1px solid rgba($black-color, 0.1);
+        background-color: #E3E1E3;
+        .nav-pills {
+            position: absolute;
+            left: 10%;
+            > li {
+                border-top: 1px solid rgba($black-color, 0.1);
+                border-bottom: 1px solid rgba($black-color, 0.1);
+                float: left;
+                > a {
+                    border-radius: 0;
+                    font-size: 11px;
+                    letter-spacing: $letter-spacing;
+                    font-weight: 400;
+                    padding: 3px 7px;
+                    background-color: $white-color;
+                    color: rgba($black-color, 0.6);
+                }
+                + li {
+                    border-left: 1px solid rgba($black-color, 0.1);
+                    margin-left: 0px;
+                }
+                &:first-child {
+                    @include border-left-radius(3px);
+                    border-left: 1px solid rgba($black-color, 0.1);
+                    a {
+                        @include border-left-radius(3px);
+                    }
+                }
+                &:last-child {
+                    @include border-right-radius(3px);
+                    border-right: 1px solid rgba($black-color, 0.1);
+                    a {
+                        @include border-right-radius(3px);
+                    }
+                }
+                &.active > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: $white-color;
+                        background-color: #6A696A;
+                    }
+                }
+            }
+        }
+    }
+    .modal-body {
+        background-color: #F7F7F7;
+        @include border-bottom-radius(5px);
+    }
+}
+
+#overview {
+    .modal-body {
+        img {
+            width: 50px;
+        }
+    }
+}

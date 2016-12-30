@@ -41,9 +41,7 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/img/apple.svg" alt="Apple Logo"/></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">
-                                        <span class="text">About This Mac</span>
-                                    </a>
+                                    <a data-toggle="modal" data-target="#about-mac"><span class="text">About This Mac</span></a>
                                 </li>
                                 <li role="separator" class="divider"></li>
                                 <li>
@@ -96,6 +94,54 @@
                             </ul>
                         </div>
                     </span>
+                    <div class="modal about-mac" id="about-mac" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content draggable modal-md">
+                                <div class="modal-header">
+                                    <div class="row">
+                                        <div class="col-md-2 col-lg-2">
+                                            <ul class="list-inline">
+                                                <li><span class="dot kill" data-dismiss="modal"></span></li>
+                                                <li><span class="dot minimize"></span></li>
+                                                <li><span class="dot fullscreen"></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-10 col-lg-10 text-center">
+                                            <ul class="nav nav-pills" role="tablist">
+                                                <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+                                                <li role="presentation"><a href="#displays" aria-controls="displays" role="tab" data-toggle="tab">Displays</a></li>
+                                                <li role="presentation"><a href="#storage" aria-controls="storage" role="tab" data-toggle="tab">Storage</a></li>
+                                                <li role="presentation"><a href="#support" aria-controls="support" role="tab" data-toggle="tab">Support</a></li>
+                                                <li role="presentation"><a href="#service" aria-controls="service" role="tab" data-toggle="tab">Service</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="overview">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                        <div class="logo">
+                                                            <img src="/img/el-capitan-logo.png" alt="el capitan logo"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="displays">Display</div>
+                                        <div role="tabpanel" class="tab-pane" id="storage">Storage</div>
+                                        <div role="tabpanel" class="tab-pane" id="support">Support</div>
+                                        <div role="tabpanel" class="tab-pane" id="service">Service</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -459,7 +505,7 @@
         </nav>
     </section>
     <section class="content">
-        <div class="modal fade" id="terminal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+        <!-- <div class="modal fade" id="terminal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static"> -->
             <!-- <div class="modal-dialog" role="document"> -->
                 <!-- <div class="modal-content draggable modal-terminal modal-lg"> -->
                     <!-- <div class="modal-header">
@@ -492,7 +538,7 @@
                     <!-- </div> -->
                 <!-- </div> -->
             <!-- </div> -->
-        </div>
+        <!-- </div> -->
     </section>
     <section>
         <footer class="footer">
