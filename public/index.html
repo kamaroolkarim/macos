@@ -253,6 +253,49 @@
                                         <span class="text">Turn Wi-Fi Off</span>
                                     </a>
                                 </li>
+                                <li v-if="wifiEnabled" role="separator" class="divider"></li>
+                                <li v-if="wifiEnabled">
+                                    <a href="#">
+                                        <span class="text">whatdeheck</span>
+                                        <span class="icon">
+                                            <img src="/img/lock.svg" alt="Lock"/>
+                                            <img src="/img/wifi.svg" alt="Wifi"/>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li v-if="wifiEnabled">
+                                    <a href="#">
+                                        <span class="text">4G Yes Wifi</span>
+                                        <span class="icon">
+                                            <img src="/img/wifi.svg" alt="Wifi"/>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li v-if="wifiEnabled">
+                                    <a href="#">
+                                        <span class="text">Cool Code's HQ</span>
+                                        <span class="icon">
+                                            <img src="/img/lock.svg" alt="Lock"/>
+                                            <img src="/img/wifi.svg" alt="Wifi"/>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li v-if="wifiEnabled">
+                                    <a href="#">
+                                        <span class="text">Join Other Network...</span>
+                                    </a>
+                                </li>
+                                <li v-if="wifiEnabled">
+                                    <a href="#">
+                                        <span class="text">Create Network...</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Open  Network Preferences...</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="dropdown">
