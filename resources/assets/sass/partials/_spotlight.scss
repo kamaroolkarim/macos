@@ -1,0 +1,27 @@
+.spotlight {
+    .modal-content {
+        border-radius: 4px;
+    }
+    .modal-body {
+        width: 680px;
+        border-radius: 4px;
+        padding: 2px;
+        background-color: $black-spotlight-color;
+        border: 1px solid rgba($black-spotlight-color, 0.2);
+        .input-group-addon,
+        .form-control {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            height: 50px;
+            margin-left: -10px;
+            font-size: 25px;
+            font-weight: 300;
+            color: $white-color;
+        }
+        img {
+            width: 20px;
+            opacity: 0.5;
+        }
+    }
+}

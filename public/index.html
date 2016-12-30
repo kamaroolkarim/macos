@@ -245,7 +245,7 @@
                             <ul class="dropdown-menu dropdown-menu-left">
                                 <li class="disabled">
                                     <a href="#">
-                                        <span class="text" v-if="wifiEnabled">Wifi: Looking for Networks...</span>
+                                        <span class="text"><span v-if="wifiEnabled">Wifi: Looking for Networks...</span><span v-else="wifiEnabled">Wi-Fi: Off</span></span>
                                     </a>
                                 </li>
                                 <li>
@@ -377,7 +377,21 @@
                                 </li>
                             </ul>
                         <li>
-                            <a href="#"><img src="/img/search.svg" class="search-icon" alt="Spotlight Search" /></a>
+                            <a data-toggle="modal" data-target="#spotlight-search"><img src="/img/search.svg" class="search-icon" alt="Spotlight Search" /></a>
+                            <div class="modal fade spotlight" id="spotlight-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content draggable modal-md">
+                                        <div class="modal-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <img src="/img/search.svg"/>
+                                                </span>
+                                                <input type="text" class="form-control input-md" placeholder="Spotlight Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <a href="#"><img src="/img/menubarnotification.png" class="menu-bar-noti-icon" alt="Menu Bar Notification" /></a>
