@@ -250,7 +250,7 @@
                                 </li>
                                 <li>
                                     <a href="#" v-on:click="toggleWifi()">
-                                        <span class="text">Turn Wi-Fi Off</span>
+                                        <span class="text">Turn Wi-Fi <span v-if="wifiEnabled">Off</span><span v-else="wifiEnabled">On</span></span>
                                     </a>
                                 </li>
                                 <li v-if="wifiEnabled" role="separator" class="divider"></li>
