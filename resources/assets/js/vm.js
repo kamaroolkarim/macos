@@ -12,7 +12,7 @@
 new Vue({
     el: '#vm-date',
     data: {
-        date: moment().format("ddd D MMM h:mm:ss A"),
+        date: moment().format("ddd D MMM h:mm A"),
         dateDetail: moment().format("dddd, DD MMMM YYYY")
     },
 

@@ -1,9 +1,10 @@
 .spotlight {
     .modal-content {
         border-radius: 4px;
+        width: 680px;
+        box-shadow: 0 45px 100px 5px rgba(0,0,0,0.5);
     }
     .modal-body {
-        width: 680px;
         border-radius: 4px;
         padding: 2px;
         background-color: $black-spotlight-color;
@@ -18,6 +19,7 @@
             font-size: 25px;
             font-weight: 300;
             color: $white-color;
+            letter-spacing: $letter-spacing;
         }
         img {
             width: 20px;
