@@ -16,17 +16,20 @@
     &:focus {
         text-decoration: none;
     }
-    > img {
+    img {
         display: inline-block;
         width: 15px;
         height: auto;
         margin-top: -9px;
     }
-    @media (min-width: $grid-float-breakpoint) {
-        .navbar > .container &,
-        .navbar > .container-fluid & {
-            margin-left: -$navbar-padding-horizontal;
+    .dropdown {
+        a {
+            cursor: default;
         }
+    }
+    .dropdown-menu {
+        @include border-top-radius(0);
+        margin-top: 3px;
     }
 }
 
