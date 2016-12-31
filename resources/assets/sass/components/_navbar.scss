@@ -1,9 +1,12 @@
 .navbar {
-    position: relative;
+    display: block;
+    position: fixed;
     margin-bottom: 0;
     border: none;
     border-radius: 0;
     min-height: 0;
+    z-index: 4000;
+    top: 0;
 }
 
 .navbar-brand {
@@ -84,13 +87,8 @@
     }
 }
 
-.navbar-text {
-    @include navbar-vertical-align($line-height-computed);
-    @media (min-width: $grid-float-breakpoint) {
-        float: left;
-        margin-left: $navbar-padding-horizontal;
-        margin-right: $navbar-padding-horizontal;
-    }
+.navbar-nav > li > .dropdown-menu {
+    z-index: 5000;
 }
 
 // Default navbar
@@ -227,4 +225,8 @@
             color: $navbar-default-link-hover-color;
         }
     }
+}
+
+.navbar-fixed-top {
+    z-index: 4000;
 }

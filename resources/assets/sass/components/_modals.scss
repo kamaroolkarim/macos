@@ -2,6 +2,7 @@
     display: none;
     letter-spacing: $letter-spacing;
     cursor: default;
+    top: 25px;
 }
 
 // Actual modal
@@ -18,6 +19,7 @@
 
 // Modal background
 .modal-backdrop {
+    z-index: -100;
     display: none;
     &.fade {
         @include opacity(0);
