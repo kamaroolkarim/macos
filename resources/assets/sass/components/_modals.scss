@@ -19,7 +19,6 @@
 
 // Modal background
 .modal-backdrop {
-    z-index: -100;
     display: none;
     &.fade {
         @include opacity(0);
