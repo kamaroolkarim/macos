@@ -7,7 +7,7 @@
     .modal-body {
         border-radius: 4px;
         padding: 2px;
-        background-color: $black-spotlight-color;
+        background-color: rgba($black-color, 0.7);
         border: 1px solid rgba($black-spotlight-color, 0.2);
         .input-group-addon,
         .form-control {
