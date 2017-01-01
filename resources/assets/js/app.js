@@ -84,9 +84,14 @@ window.dragMoveListener = dragMoveListener;
 // -------------------------------------------- Terminal JS ------------------------------------- //
 
 /*var container = document.querySelector('.bash');
-var bsh = new bash(container, {
-    demo: true,
-    prompt: ['~', '$'],
+var bsh = new Bash(container, {
+    computer: 'ttys000', // Name of the computer (string)
+    help: undefined, // Optional help text (string)
+    prompt: 'user@home:~$', // Shell prompt symbol (string or array)
+    name: undefined, // Name of custom function (string)
+    function: undefined, // Custom function definition (function)
+    demo: false,
+    name: 'grunt',
     function: function(bash, next) {
         bash.post('npm install --production', 0, true);
         bash.post('npm start', 500, true);
